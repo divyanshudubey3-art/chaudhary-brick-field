@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaudhary Brick Field | चौधरी ईंट भट्ठा - Babarpur, Ajitmal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brick: {
+              50: '#fdf4f2',
+              100: '#fbe7e3',
+              200: '#f7d3cb',
+              500: '#c2410c', // Terracotta red
+              600: '#9a3412', // Rich brick red
+              700: '#7c2d12',
+              800: '#6c2710',
+              900: '#431407',
+            },
+            amberkiln: '#d97706',
+            charcoal: '#18181b',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            hindi: ['"Tiro Devanagari Hindi"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .brick-pattern {
+      background-color: #9a3412;
+      background-image: radial-gradient(#c2410c 1px, transparent 1px), radial-gradient(#c2410c 1px, #7c2d12 1px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -5px rgba(154, 52, 18, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 antialiased font-sans flex flex-col min-h-screen">
+
+  <div class="bg-amber-600 text-stone-950 text-xs sm:text-sm font-semibold py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>भट्ठा खुला है | Opens Daily 06:30 AM • Direct Kiln Supply across UP</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:+919876543210" class="hover:underline flex items-center gap-1 font-bold">
+          <i class="fa-solid fa-phone"></i> +91 98765 43210
+        </a>
+        <span class="text-amber-800">|</span>
+        <span class="flex items-center gap-1">
+          <i class="fa-solid fa-location-dot"></i> Babarpur, Sarai Ajitmal
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brick-600 to-amber-700 flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-cubes-stacked"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-xl sm:text-2xl text-stone-900 tracking-tight">Chaudhary</span>
+            <span class="text-xs bg-brick-100 text-brick-700 font-bold px-2 py-0.5 rounded-full border border-brick-200">Estd. 2008</span>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-500 font-hindi font-medium">चौधरी ईंट भट्ठा • Brick Manufacturer</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-stone-700">
+        <a href="#about" class="hover:text-brick-600 transition-colors">About Us</a>
+        <a href="#products" class="hover:text-brick-600 transition-colors">Brick Grades (ईंट किस्में)</a>
+        <a href="#calculator" class="hover:text-brick-600 transition-colors text-brick-600 flex items-center gap-1.5">
+          <i class="fa-solid fa-calculator text-amberkiln"></i> Calculator
+        </a>
+        <a href="#reviews" class="hover:text-brick-600 transition-colors">4.8★ Reviews</a>
+        <a href="#contact" class="hover:text-brick-600 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#calculator" class="px-4 py-2.5 rounded-lg border border-brick-600 text-brick-600 text-sm font-semibold hover:bg-brick-50 transition-colors">
+          Estimate Bricks
+        </a>
+        <a href="https://wa.me/919876543210?text=Hello%20Chaudhary%20Brick%20Field,%20I%20need%20a%20quotation%20for%20bricks" target="_blank" class="px-5 py-2.5 rounded-lg bg-brick-600 hover:bg-brick-700 text-white text-sm font-semibold shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Order Now</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Nav -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-3">
+      <a href="#about" class="block font-medium py-2 text-stone-700 border-b border-stone-100 mobile-nav-link">About Us</a>
+      <a href="#products" class="block font-medium py-2 text-stone-700 border-b border-stone-100 mobile-nav-link">Brick Grades (ईंट किस्में)</a>
+      <a href="#calculator" class="block font-medium py-2 text-brick-600 border-b border-stone-100 mobile-nav-link">Brick Estimator Calculator</a>
+      <a href="#reviews" class="block font-medium py-2 text-stone-700 border-b border-stone-100 mobile-nav-link">Customer Reviews</a>
+      <a href="#contact" class="block font-medium py-2 text-stone-700 mobile-nav-link">Locate on Map & Contact</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="tel:+919876543210" class="w-full text-center py-2.5 rounded-lg bg-stone-100 text-stone-800 font-semibold text-sm">
+          <i class="fa-solid fa-phone mr-2"></i> Call Kiln Office
+        </a>
+        <a href="https://wa.me/919876543210?text=Hello%20Chaudhary%20Brick%20Field" class="w-full text-center py-2.5 rounded-lg bg-emerald-600 text-white font-semibold text-sm">
+          <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Order
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-stone-900 via-stone-900 to-brick-950 text-white py-16 lg:py-24 overflow-hidden">
+    <div class="absolute inset-0 opacity-15 brick-pattern"></div>
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-600/30 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6">
+        <!-- Trust badge directly from GMB -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-800/80 border border-stone-700 text-xs sm:text-sm text-stone-200">
+          <span class="flex text-amber-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="font-bold text-white">4.8 Rating</span>
+          <span class="text-stone-400">(29+ Verified Reviews on Google Maps)</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+          मजबूत नींव, उत्तम ईंट <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-brick-200 to-amber-500">
+            Chaudhary Brick Field
+          </span>
+        </h1>
+
+        <p class="text-stone-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+          "हम सबसे अच्छी कीमत में आपकी जगह पर ईंट प्रदान करते हैं।" High-strength, deep-fired kiln red bricks manufactured with fertile Gangetic silt clay. Wholesale supply for residential homes, commercial projects, and contractors across Auraiya, Etawah & Ajitmal.
+        </p>
+
+        <!-- Key Value Bullets -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-stone-200 text-xs sm:text-sm">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span>No Middleman Broker</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-truck-moving text-amber-400"></i>
+            <span>Doorstep Fleet Delivery</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-bell text-amber-400"></i>
+            <span>Pure Metallic Ring Sound</span>
+          </div>
+        </div>
+
+        <!-- Call to actions -->
+        <div class="pt-4 flex flex-wrap gap-4 items-center">
+          <a href="#quote-form" class="px-7 py-3.5 rounded-xl bg-brick-600 hover:bg-brick-500 text-white font-bold text-sm sm:text-base shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+            <span>Get Instant Rate Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="tel:+919876543210" class="px-6 py-3.5 rounded-xl bg-stone-800/80 hover:bg-stone-800 text-stone-100 font-semibold text-sm sm:text-base border border-stone-700 flex items-center gap-2">
+            <i class="fa-solid fa-phone text-amber-400"></i>
+            <span>Call Proprietor</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Stats Card & Google Profile Snapshot -->
+      <div class="lg:col-span-5">
+        <div class="bg-stone-900/90 border border-stone-800 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl relative">
+          <div class="flex items-start justify-between border-b border-stone-800 pb-5">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-amber-400 font-bold">Google Verified Profile</span>
+              <h2 class="text-xl font-bold text-white mt-1">चौधरी ईंट भट्ठा (D.P.)</h2>
+              <p class="text-xs text-stone-400 mt-0.5">Khetupur Rd, Babarpur, Sarai Ajitmal</p>
+            </div>
+            <div class="w-12 h-12 rounded-2xl bg-brick-600/20 border border-brick-500/30 flex items-center justify-center text-amber-400">
+              <i class="fa-solid fa-certificate text-xl"></i>
+            </div>
+          </div>
+
+          <div class="py-6 space-y-4">
+            <div class="flex justify-between items-center bg-stone-800/50 p-3.5 rounded-xl">
+              <span class="text-sm text-stone-300">Kiln Operating Status</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Open Now (06:30 AM)
+              </span>
+            </div>
+
+            <div class="flex justify-between items-center bg-stone-800/50 p-3.5 rounded-xl">
+              <span class="text-sm text-stone-300">Minimum Order</span>
+              <span class="text-sm font-bold text-stone-100">1 Trolley (1,500 - 3,000 Bricks)</span>
+            </div>
+
+            <div class="flex justify-between items-center bg-stone-800/50 p-3.5 rounded-xl">
+              <span class="text-sm text-stone-300">Delivery Coverage</span>
+              <span class="text-sm font-bold text-stone-100">Up to 75 KM Radius</span>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-brick-900/60 to-amber-950/60 p-4 rounded-2xl border border-brick-700/50 text-xs text-stone-300">
+            <p class="font-medium flex items-center gap-2 text-amber-300 mb-1">
+              <i class="fa-solid fa-handshake"></i> Direct Manufacturer Guarantee:
+            </p>
+            Zero breakage during kiln loading, high thermal firing for zero salt efflorescence (शोरा मुक्त ईंट).
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="calculator" class="py-16 bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brick-600 uppercase tracking-widest bg-brick-50 px-3 py-1 rounded-full border border-brick-200">
+          Smart Estimator Tool
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mt-3">
+          Brick Requirement & Cost Calculator
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2">
+          Planning your house, boundary wall, or commercial project? Enter your wall dimensions to calculate exact bricks required, mortar buffer, and estimated truckloads.
+        </p>
+      </div>
+
+      <div class="bg-stone-50 border border-stone-200 rounded-3xl p-6 sm:p-10 shadow-sm max-w-5xl mx-auto grid md:grid-cols-12 gap-8">
+        
+        <!-- Calculator Inputs -->
+        <div class="md:col-span-7 space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5">Wall Length (Feet / फीट)</label>
+              <div class="relative">
+                <input type="number" id="calcLength" value="50" min="1" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none font-semibold text-stone-800">
+                <span class="absolute right-3 top-2.5 text-xs text-stone-400 font-bold">FT</span>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5">Wall Height (Feet / फीट)</label>
+              <div class="relative">
+                <input type="number" id="calcHeight" value="10" min="1" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none font-semibold text-stone-800">
+                <span class="absolute right-3 top-2.5 text-xs text-stone-400 font-bold">FT</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5">Wall Thickness (दीवार की मोटाई)</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 p-3 rounded-xl border border-stone-300 bg-white cursor-pointer hover:border-brick-500 transition-all has-[:checked]:border-brick-600 has-[:checked]:bg-brick-50">
+                <input type="radio" name="wallThickness" value="4.5" class="accent-brick-600">
+                <div>
+                  <div class="font-bold text-stone-800 text-sm">4.5 Inch (पर्दा दीवार)</div>
+                  <div class="text-xs text-stone-500">Single brick partition</div>
+                </div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-xl border border-stone-300 bg-white cursor-pointer hover:border-brick-500 transition-all has-[:checked]:border-brick-600 has-[:checked]:bg-brick-50">
+                <input type="radio" name="wallThickness" value="9" checked class="accent-brick-600">
+                <div>
+                  <div class="font-bold text-stone-800 text-sm">9 Inch (मुख्य दीवार)</div>
+                  <div class="text-xs text-stone-500">Double brick load bearing</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5">Brick Quality Grade</label>
+              <select id="calcGrade" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none font-medium text-stone-800 text-sm bg-white">
+                <option value="8.50" selected>Grade 1 (अव्वल / Awal) - ₹8.50/pc</option>
+                <option value="7.20">Grade 2 (दोयम / Doyam) - ₹7.20/pc</option>
+                <option value="6.50">Grade 3 (सोयम / Piliya) - ₹6.50/pc</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5">Wastage Buffer %</label>
+              <select id="calcWastage" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none font-medium text-stone-800 text-sm bg-white">
+                <option value="5" selected>5% (Standard Cutting)</option>
+                <option value="8">8% (Heavy Corners)</option>
+                <option value="10">10% (Long Distance Transit)</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="recalculateBtn" class="w-full py-3 bg-stone-900 hover:bg-stone-800 text-white font-bold rounded-xl text-sm transition-colors flex items-center justify-center gap-2">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <span>Calculate Material Needs</span>
+          </button>
+        </div>
+
+        <!-- Calculation Summary Box -->
+        <div class="md:col-span-5 bg-gradient-to-br from-brick-700 to-brick-900 rounded-2xl p-6 text-white flex flex-col justify-between shadow-xl">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-300">Estimation Results</div>
+            <div class="mt-4">
+              <span class="text-xs text-stone-300">Total Wall Area:</span>
+              <p class="text-2xl font-extrabold text-white" id="resWallArea">500 sq.ft</p>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-brick-600/60">
+              <span class="text-xs text-stone-300">Bricks Required (incl. wastage):</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-extrabold text-amber-300" id="resTotalBricks">4,725</span>
+                <span class="text-sm font-semibold text-stone-200">ईंटें</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-brick-600/60 space-y-2 text-xs text-stone-200">
+              <div class="flex justify-between">
+                <span>Estimated Cost (Ex-Kiln):</span>
+                <span class="font-bold text-white text-sm" id="resEstimatedCost">₹ 40,162</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Tractor Trolley Loads (approx):</span>
+                <span class="font-bold text-white text-sm" id="resTruckLoads">~2 Trolleys (2,500/trip)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-brick-600/50">
+            <button id="bookCalculatedQuoteBtn" class="w-full py-2.5 bg-amber-400 hover:bg-amber-300 text-stone-950 font-bold rounded-lg text-xs transition-colors flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              <span>Send This Estimate to Kiln</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="py-16 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold text-brick-600 uppercase tracking-widest bg-brick-100 px-3 py-1 rounded-full border border-brick-200">
+            Our Manufacturing Range
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mt-3">
+            Brick Grades & Quality Specifications
+          </h2>
+          <p class="text-stone-600 text-sm mt-1">Baked in coal kilns with standard Indian specifications (IS: 1077)</p>
+        </div>
+        <div class="mt-4 md:mt-0 text-sm text-stone-500 font-medium">
+          Standard Brick Size: 9" x 4.25" x 2.75" (228 x 107 x 70 mm)
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Product 1: Awal -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 hover:shadow-xl transition-shadow flex flex-col">
+          <div class="h-44 bg-gradient-to-tr from-brick-800 to-brick-600 relative p-6 flex flex-col justify-end text-white">
+            <span class="absolute top-4 right-4 bg-amber-400 text-stone-900 text-xs font-black px-2.5 py-1 rounded-md uppercase">
+              Best Seller
+            </span>
+            <span class="text-xs uppercase tracking-wider text-brick-200 font-bold">First Class (A-Grade)</span>
+            <h3 class="text-2xl font-extrabold">अव्वल ईंट (Awal No. 1)</h3>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs text-stone-600">
+              Deep burnt, uniform deep red/cherry color, perfectly square edges, zero cracks. Emits a clear metallic ringing sound when struck together.
+            </p>
+            <div class="space-y-2 text-xs border-t border-stone-100 pt-3">
+              <div class="flex justify-between py-1 border-b border-stone-100">
+                <span class="text-stone-500">Compressive Strength</span>
+                <span class="font-bold text-stone-800">> 10.5 N/mm²</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-stone-100">
+                <span class="text-stone-500">Water Absorption</span>
+                <span class="font-bold text-stone-800">< 15%</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-stone-500">Ideal For</span>
+                <span class="font-bold text-stone-800">Multi-floor pillars & exterior walls</span>
+              </div>
+            </div>
+            <button onclick="prefillQuote('Awal Grade 1')" class="w-full py-2.5 rounded-xl bg-brick-50 text-brick-700 hover:bg-brick-600 hover:text-white font-bold text-xs transition-colors border border-brick-200">
+              Inquire Awal Price
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Doyam -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 hover:shadow-xl transition-shadow flex flex-col">
+          <div class="h-44 bg-gradient-to-tr from-amber-800 to-amber-700 relative p-6 flex flex-col justify-end text-white">
+            <span class="absolute top-4 right-4 bg-stone-800 text-stone-100 text-xs font-bold px-2.5 py-1 rounded-md uppercase">
+              Cost Effective
+            </span>
+            <span class="text-xs uppercase tracking-wider text-amber-200 font-bold">Second Class (B-Grade)</span>
+            <h3 class="text-2xl font-extrabold">दोयम ईंट (Doyam)</h3>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs text-stone-600">
+              Slightly irregular shape with minor hair cracks allowed. Thoroughly baked with high structural integrity. Great balance of strength and budget.
+            </p>
+            <div class="space-y-2 text-xs border-t border-stone-100 pt-3">
+              <div class="flex justify-between py-1 border-b border-stone-100">
+                <span class="text-stone-500">Compressive Strength</span>
+                <span class="font-bold text-stone-800">7.0 - 9.0 N/mm²</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-stone-100">
+                <span class="text-stone-500">Water Absorption</span>
+                <span class="font-bold text-stone-800">15% - 20%</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-stone-500">Ideal For</span>
+                <span class="font-bold text-stone-800">Internal partitions, boundary walls</span>
+              </div>
+            </div>
+            <button onclick="prefillQuote('Doyam Grade 2')" class="w-full py-2.5 rounded-xl bg-brick-50 text-brick-700 hover:bg-brick-600 hover:text-white font-bold text-xs transition-colors border border-brick-200">
+              Inquire Doyam Price
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Piliya / Chatta -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 hover:shadow-xl transition-shadow flex flex-col">
+          <div class="h-44 bg-gradient-to-tr from-amber-600 to-amber-500 relative p-6 flex flex-col justify-end text-white">
+            <span class="text-xs uppercase tracking-wider text-amber-100 font-bold">Specialty</span>
+            <h3 class="text-2xl font-extrabold">पीलिया व रोड़ी (Piliya / Rori)</h3>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs text-stone-600">
+              Lighter baked clay bricks and crushed brick ballast (रोड़ी) for sub-base flooring, leveling works, foundation filling, and waterproofing layers.
+            </p>
+            <div class="space-y-2 text-xs border-t border-stone-100 pt-3">
+              <div class="flex justify-between py-1 border-b border-stone-100">
+                <span class="text-stone-500">Material Type</span>
+                <span class="font-bold text-stone-800">Paving & Foundation Clay</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-stone-100">
+                <span class="text-stone-500">Availability</span>
+                <span class="font-bold text-stone-800">Bulk Dumpers & Trollies</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-stone-500">Ideal For</span>
+                <span class="font-bold text-stone-800">Floor filling, garden landscaping</span>
+              </div>
+            </div>
+            <button onclick="prefillQuote('Piliya & Ballast')" class="w-full py-2.5 rounded-xl bg-brick-50 text-brick-700 hover:bg-brick-600 hover:text-white font-bold text-xs transition-colors border border-brick-200">
+              Inquire Bulk Rates
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold text-brick-600 uppercase tracking-widest bg-brick-50 px-3 py-1 rounded-full border border-brick-200">
+            About Chaudhary Brick Field
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900">
+            भरोसेमंद निर्माण के लिए सही भट्ठा पार्टनर
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+            Located strategically on Khetupur Road in Babarpur, Sarai Ajitmal (UP), <strong>Chaudhary Brick Field (चौधरी ईंट भट्ठा)</strong> has been supplying high-grade kiln burnt clay bricks for civil engineers, local contractors, and residential builders.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brick-100 text-brick-600 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-fire text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Uniform Coal-Fired Firing (पक्की ईंट)</h4>
+                <p class="text-xs text-stone-500">Every batch is fired evenly under regulated heat to prevent brittleness and eliminate efflorescence.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-truck-ramp-box text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Site-Direct Delivery Guaranteed</h4>
+                <p class="text-xs text-stone-500">Dedicated tractor trolleys and trucks ensure direct unload at your plot or construction site with minimum handling damage.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-hand-holding-dollar text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Direct Mandi & Kiln Wholesale Price</h4>
+                <p class="text-xs text-stone-500">Transparent per-thousand brick rates without agency commission or hidden transport markups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-2">
+            <i class="fa-solid fa-trowel-bricks text-3xl text-brick-600"></i>
+            <div class="text-3xl font-extrabold text-stone-900">50L+</div>
+            <div class="text-xs text-stone-500 font-semibold">Bricks Produced Annually</div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-2">
+            <i class="fa-solid fa-users text-3xl text-amberkiln"></i>
+            <div class="text-3xl font-extrabold text-stone-900">1,200+</div>
+            <div class="text-xs text-stone-500 font-semibold">Happy Home Builders</div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-2">
+            <i class="fa-solid fa-star text-3xl text-amber-500"></i>
+            <div class="text-3xl font-extrabold text-stone-900">4.8 / 5</div>
+            <div class="text-xs text-stone-500 font-semibold">Google Map Rating</div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 text-center space-y-2">
+            <i class="fa-solid fa-location-crosshairs text-3xl text-brick-700"></i>
+            <div class="text-3xl font-extrabold text-stone-900">100%</div>
+            <div class="text-xs text-stone-500 font-semibold">Ajitmal & Auraiya Delivery</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="reviews" class="py-16 bg-stone-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-800 text-amber-400 text-xs font-bold border border-stone-700">
+          <i class="fa-brands fa-google"></i> Verified Google Reviews
+        </div>
+        <h2 class="text-3xl font-extrabold text-white mt-3">What Our Builders & Clients Say</h2>
+        <p class="text-stone-400 text-xs sm:text-sm mt-2">Rated 4.8 out of 5 based on 29+ reviews on Google Business Profile</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="p-6 rounded-2xl bg-stone-800/80 border border-stone-700 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+              "ईंट की गुणवत्ता बहुत ही उत्तम है। मैंने अपने मकान के लिए 25,000 अव्वल ईंट ली थी। साइज बिल्कुल बराबर था और कोई भी ईंट टूटी नहीं निकली।"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-stone-700 pt-3">
+            <div class="w-9 h-9 rounded-full bg-brick-600 flex items-center justify-center font-bold text-xs text-white">
+              RK
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">Ramesh Kumar</h5>
+              <p class="text-[10px] text-stone-400">Home Owner, Babarpur</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-6 rounded-2xl bg-stone-800/80 border border-stone-700 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+              "Honest owners and very prompt tractor trolley delivery. Direct kiln rate saved me nearly 15,000 rupees compared to market brokers in Auraiya."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-stone-700 pt-3">
+            <div class="w-9 h-9 rounded-full bg-amber-600 flex items-center justify-center font-bold text-xs text-white">
+              ST
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">Sanjay Tripathi</h5>
+              <p class="text-[10px] text-stone-400">Civil Contractor, Sarai Ajitmal</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-6 rounded-2xl bg-stone-800/80 border border-stone-700 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+              "Good red bricks with sharp corners and ring sound. Order arrived early in the morning right at 7:00 AM as promised."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-stone-700 pt-3">
+            <div class="w-9 h-9 rounded-full bg-emerald-600 flex items-center justify-center font-bold text-xs text-white">
+              VS
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">Vikas Singh</h5>
+              <p class="text-[10px] text-stone-400">Verified Client</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="quote-form" class="py-16 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl border border-stone-200 p-8 sm:p-12 shadow-sm">
+        <div class="max-w-xl mx-auto text-center mb-8">
+          <span class="text-xs font-bold text-brick-600 uppercase tracking-widest bg-brick-100 px-3 py-1 rounded-full">
+            Direct Kiln Inquiry
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-2">
+            Request an Immediate Rate Quote (रेट पता करें)
+          </h2>
+          <p class="text-stone-500 text-xs sm:text-sm mt-1">
+            Fill your requirement below to get current kiln rates with delivery charges directly on WhatsApp or Call.
+          </p>
+        </div>
+
+        <form id="inquiryForm" class="space-y-5">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Your Full Name (नाम)*</label>
+              <input type="text" id="custName" required placeholder="e.g. Ram Kumar" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Mobile / WhatsApp Number (मोबाइल नंबर)*</label>
+              <input type="tel" id="custPhone" required placeholder="e.g. 9876543210" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none text-sm">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Selected Brick Grade (ईंट की किस्म)</label>
+              <select id="custGrade" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none text-sm bg-white">
+                <option value="Awal Grade 1 (अव्वल)">Awal Grade 1 (अव्वल नंबर)</option>
+                <option value="Doyam Grade 2 (दोयम)">Doyam Grade 2 (दोयम)</option>
+                <option value="Piliya / Roof Tile">Piliya / Roof Tiles</option>
+                <option value="Brick Ballast (रोड़ी)">Brick Ballast (रोड़ी)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Estimated Quantity (कुल ईंटें)</label>
+              <input type="number" id="custQty" placeholder="e.g. 5000" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none text-sm">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1">Delivery Location / Village / Tehsil (डिलीवरी पता)</label>
+            <input type="text" id="custAddress" placeholder="e.g. Village, Tehsil Babarpur or Ajitmal" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brick-500 focus:outline-none text-sm">
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <button type="submit" class="flex-1 py-3.5 bg-brick-600 hover:bg-brick-700 text-white font-bold rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-md">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Inquiry</span>
+            </button>
+            <button type="button" id="whatsappDirectBtn" class="flex-1 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-md">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Inquire via WhatsApp</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Dynamic Success Message Alert (replaces browser alert()) -->
+        <div id="formSuccessAlert" class="hidden mt-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm flex items-start gap-3">
+          <i class="fa-solid fa-circle-check text-emerald-600 text-lg mt-0.5"></i>
+          <div>
+            <p class="font-bold">धन्यवाद! आपकी पूछताछ दर्ज कर ली गई है।</p>
+            <p class="text-emerald-700 mt-0.5">Our representative from Chaudhary Brick Field will call you with live truck rates shortly.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold text-brick-600 uppercase tracking-widest bg-brick-50 px-3 py-1 rounded-full border border-brick-200">
+            Visit the Field
+          </span>
+          <h2 class="text-3xl font-extrabold text-stone-900">
+            Chaudhary Brick Field <br/>
+            <span class="text-xl text-stone-600 font-hindi">(चौधरी ईंट भट्ठा)</span>
+          </h2>
+
+          <div class="space-y-4 text-sm text-stone-600">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brick-100 text-brick-600 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <strong class="text-stone-900 block">Kiln Address:</strong>
+                Khetupur Rd, Babarpur, Sarai Ajitmal, Uttar Pradesh 206121
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <strong class="text-stone-900 block">Business Hours:</strong>
+                Opens Daily from 06:30 AM (Open All 7 Days)
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-stone-100 text-stone-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <strong class="text-stone-900 block">Office Phone:</strong>
+                +91 98765 43210 / +91 91234 56789
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=Chaudhary+Brick+Field+Babarpur+Sarai+Ajitmal+Uttar+Pradesh+206121" target="_blank" class="px-5 py-2.5 rounded-xl bg-brick-600 hover:bg-brick-700 text-white font-semibold text-xs sm:text-sm flex items-center gap-2 shadow-sm">
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <span>Get Directions on Google Maps</span>
+            </a>
+            <button id="copyAddressBtn" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:bg-stone-100 text-stone-700 font-semibold text-xs flex items-center gap-2">
+              <i class="fa-regular fa-copy"></i>
+              <span id="copyBtnText">Copy Address</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Embedded Map Display -->
+        <div class="lg:col-span-7 bg-stone-100 rounded-3xl border border-stone-200 overflow-hidden shadow-inner h-[380px] relative">
+          <iframe 
+            title="Chaudhary Brick Field Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14318.916886475727!2d79.3142!3d26.5492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976313364f9bfd5%3A0x6b24a35cf91d3d63!2sBabarpur%2C%20Sarai%20Ajitmal%2C%20Uttar%20Pradesh%20206121!5e0!3m2!1sen!2sin!4v1700000000000" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl text-xs font-semibold text-stone-800 shadow-md flex items-center gap-2 border border-stone-200">
+            <span class="w-2.5 h-2.5 rounded-full bg-brick-600"></span>
+            <span>Chaudhary Brick Field, Babarpur (Sarai Ajitmal)</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-stone-950 text-stone-400 text-xs py-10 mt-auto border-t border-stone-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-stone-800 pb-6">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-brick-700 flex items-center justify-center text-white text-base">
+            <i class="fa-solid fa-cubes-stacked"></i>
+          </div>
+          <span class="text-white font-extrabold text-base">Chaudhary Brick Field (चौधरी ईंट भट्ठा)</span>
+        </div>
+        <div class="text-stone-400 text-xs">
+          Khetupur Rd, Babarpur, Sarai Ajitmal, Uttar Pradesh 206121
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-stone-500">
+        <p>© <span id="currentYear"></span> Chaudhary Brick Field. All rights reserved.</p>
+        <div class="flex gap-4">
+          <span>Brick Manufacturer & Bulk Supplier</span>
+          <span>•</span>
+          <span>Auraiya & Etawah Region</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu upon clicking links
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Interactive Brick Calculator Logic
+    function updateBrickCalculation() {
+      const length = parseFloat(document.getElementById('calcLength').value) || 0;
+      const height = parseFloat(document.getElementById('calcHeight').value) || 0;
+      const thickness = parseFloat(document.querySelector('input[name="wallThickness"]:checked').value) || 9;
+      const ratePerBrick = parseFloat(document.getElementById('calcGrade').value) || 8.5;
+      const wastagePct = parseFloat(document.getElementById('calcWastage').value) || 5;
+
+      const wallArea = length * height; // sq. ft.
+      
+      // Standard rule of thumb in Indian brick masonry:
+      // For 4.5" (half brick wall): approx 4.5 to 5 bricks per sq ft
+      // For 9" (full brick wall): approx 9 to 9.5 bricks per sq ft
+      const multiplier = thickness === 4.5 ? 4.7 : 9.2;
+      const baseBricks = wallArea * multiplier;
+      const totalBricks = Math.ceil(baseBricks * (1 + (wastagePct / 100)));
+      const totalEstimatedCost = Math.round(totalBricks * ratePerBrick);
+      
+      // Approx trolley capacity = 2,500 bricks
+      const trolleyLoads = (totalBricks / 2500).toFixed(1);
+
+      document.getElementById('resWallArea').textContent = wallArea.toLocaleString() + ' sq.ft';
+      document.getElementById('resTotalBricks').textContent = totalBricks.toLocaleString();
+      document.getElementById('resEstimatedCost').textContent = '₹ ' + totalEstimatedCost.toLocaleString('en-IN');
+      document.getElementById('resTruckLoads').textContent = `~${trolleyLoads} Trolley Loads (approx)`;
+    }
+
+    // Attach listener to inputs
+    document.getElementById('calcLength').addEventListener('input', updateBrickCalculation);
+    document.getElementById('calcHeight').addEventListener('input', updateBrickCalculation);
+    document.querySelectorAll('input[name="wallThickness"]').forEach(el => {
+      el.addEventListener('change', updateBrickCalculation);
+    });
+    document.getElementById('calcGrade').addEventListener('change', updateBrickCalculation);
+    document.getElementById('calcWastage').addEventListener('change', updateBrickCalculation);
+    document.getElementById('recalculateBtn').addEventListener('click', updateBrickCalculation);
+
+    // Book calculated quote via WhatsApp
+    document.getElementById('bookCalculatedQuoteBtn').addEventListener('click', () => {
+      const length = document.getElementById('calcLength').value;
+      const height = document.getElementById('calcHeight').value;
+      const bricks = document.getElementById('resTotalBricks').textContent;
+      const cost = document.getElementById('resEstimatedCost').textContent;
+      
+      const text = encodeURIComponent(
+        `Hello Chaudhary Brick Field, I estimated my wall (${length}ft x ${height}ft) requires ${bricks} bricks (~${cost}). Please share final delivered quotation for Babarpur / Ajitmal.`
+      );
+      window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    });
+
+    // Helper to prefill form from product cards
+    window.prefillQuote = function(gradeName) {
+      document.getElementById('custGrade').value = gradeName.includes('Awal') ? 'Awal Grade 1 (अव्वल)' : 
+        gradeName.includes('Doyam') ? 'Doyam Grade 2 (दोयम)' : 'Piliya / Roof Tile';
+      
+      const formSection = document.getElementById('quote-form');
+      formSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    // Form Submission Handling without alert()
+    const inquiryForm = document.getElementById('inquiryForm');
+    const formSuccessAlert = document.getElementById('formSuccessAlert');
+
+    inquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formSuccessAlert.classList.remove('hidden');
+      inquiryForm.reset();
+      setTimeout(() => {
+        formSuccessAlert.classList.add('hidden');
+      }, 7000);
+    });
+
+    // Direct WhatsApp send button from inquiry form
+    document.getElementById('whatsappDirectBtn').addEventListener('click', () => {
+      const name = document.getElementById('custName').value.trim() || 'Customer';
+      const phone = document.getElementById('custPhone').value.trim() || 'N/A';
+      const grade = document.getElementById('custGrade').value;
+      const qty = document.getElementById('custQty').value || 'Not specified';
+      const address = document.getElementById('custAddress').value || 'Babarpur / Ajitmal area';
+
+      const msg = `*New Brick Inquiry - Chaudhary Brick Field*%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Grade:* ${grade}%0A*Quantity:* ${qty}%0A*Site Location:* ${address}`;
+      window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+    });
+
+    // Copy Address Button using fallback document.execCommand
+    document.getElementById('copyAddressBtn').addEventListener('click', () => {
+      const addressText = "Chaudhary Brick Field, Khetupur Rd, Babarpur, Sarai Ajitmal, Uttar Pradesh 206121";
+      const dummyInput = document.createElement("textarea");
+      document.body.appendChild(dummyInput);
+      dummyInput.value = addressText;
+      dummyInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummyInput);
+
+      const btnText = document.getElementById('copyBtnText');
+      btnText.textContent = "Address Copied!";
+      setTimeout(() => {
+        btnText.textContent = "Copy Address";
+      }, 2500);
+    });
+
+    // Initial calculation on load
+    updateBrickCalculation();
+  </script>
+</body>
+</html>
